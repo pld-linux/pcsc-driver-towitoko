@@ -3,12 +3,15 @@ Summary:	Unix driver for Towitoko smartcard readers
 Summary(pl):	Uniksowy sterownik do czytników kart procesorowych Towitoko
 Name:		pcsc-driver-towitoko
 Version:	2.0.7
-Release:	2
+Release:	3
 License:	LGPL
 Group:		Libraries
 Source0:	http://www.geocities.com/cprados/files/%{pname}-%{version}.tar.gz
 # Source0-md5:	6cb2f842ca11aa79692af89d3730f4ce
 URL:		http://www.geocities.com/cprados/
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool
 Requires:	pcsc-lite
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -42,7 +45,13 @@ szyn± 2- i 3-liniow±).
 %setup -q -n %{pname}-%{version}
 
 %build
+%{__libtoolize}
+%{__aclocal}
+%{__autoconf}
+%{__autoheader}
+%{__automake}
 %configure \
+	--enable-shared \
 	--with-pcsc-lite-dir=/usr/lib/pcsc
 
 %{__make}
