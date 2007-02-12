@@ -1,6 +1,6 @@
 %define		pname	towitoko
 Summary:	Unix driver for Towitoko smartcard readers
-Summary(pl):	Uniksowy sterownik do czytnikÛw kart procesorowych Towitoko
+Summary(pl.UTF-8):   Uniksowy sterownik do czytnik√≥w kart procesorowych Towitoko
 Name:		pcsc-driver-towitoko
 Version:	2.0.7
 Release:	3
@@ -28,18 +28,18 @@ Supported smartcards: processor cards (direct and inverse convention,
 T=0 and T=1 protocols), memory cards (I2C, 2-wire, 3-wire bus
 protocol).
 
-%description -l pl
-Ta biblioteka dostarcza sterownik do uøywania czytnikÛw kart
-procesorowych Towitoko w ∂rodowisku uniksowym.
+%description -l pl.UTF-8
+Ta biblioteka dostarcza sterownik do u≈ºywania czytnik√≥w kart
+procesorowych Towitoko w ≈õrodowisku uniksowym.
 
-Obs≥ugiwane API: CT-API 1.1, CT-BCS 0.9, PC/SC Lite.
+Obs≈Çugiwane API: CT-API 1.1, CT-BCS 0.9, PC/SC Lite.
 
-Obs≥ugiwane czytniki: Towitoko Chipdrive Micro, Extern, Extern II,
-Intern i Twin; pod≥±czane do portu szeregowego lub USB.
+Obs≈Çugiwane czytniki: Towitoko Chipdrive Micro, Extern, Extern II,
+Intern i Twin; pod≈ÇƒÖczane do portu szeregowego lub USB.
 
-Obs≥ugiwane karty: procesorowe (w konwencji bezpo∂redniej lub
-odwrotnej, protoko≥y T=0 i T=1), pamiÍciowe (protoko≥y I2C oraz z
-szyn± 2- i 3-liniow±).
+Obs≈Çugiwane karty: procesorowe (w konwencji bezpo≈õredniej lub
+odwrotnej, protoko≈Çy T=0 i T=1), pamiƒôciowe (protoko≈Çy I2C oraz z
+szynƒÖ 2- i 3-liniowƒÖ).
 
 %prep
 %setup -q -n %{pname}-%{version}
