@@ -1,6 +1,6 @@
 %define		pname	towitoko
 Summary:	Unix driver for Towitoko smartcard readers
-Summary(pl.UTF-8):   Uniksowy sterownik do czytników kart procesorowych Towitoko
+Summary(pl.UTF-8):	Uniksowy sterownik do czytników kart procesorowych Towitoko
 Name:		pcsc-driver-towitoko
 Version:	2.0.7
 Release:	3
